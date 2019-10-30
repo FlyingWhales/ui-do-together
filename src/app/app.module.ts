@@ -7,6 +7,7 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { ListComponent } from './list/list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListCreateComponent } from './list-create/list-create.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ListCreateComponent } from './list-create/list-create.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]

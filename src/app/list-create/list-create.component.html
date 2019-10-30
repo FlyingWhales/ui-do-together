@@ -1,15 +1,6 @@
 <div class="form-group">
-        <label for="listName">Email address</label>
-        <input type="email" class="form-control" id="list.name" aria-describedby="emailHelp"
-                placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted"></small>
+        <label for="listName">List Name</label>
+        <input class="form-control" id="listname" name="listname" aria-describedby="listNameHelp"
+                placeholder="Enter list name" #listname>
 </div>
-<div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-</div>
-<div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-</div>
-<button type="submit" class="btn btn-primary">Save</button>
+<button (click)="saveList(listname.value);" class="btn btn-primary">Save</button>
